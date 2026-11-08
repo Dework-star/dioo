@@ -1,0 +1,245 @@
+<html lang="ru">
+<head>
+  <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <title>Morning Coffee</title>
+    <style>
+        body {
+            background-color: #FFF3E0;
+            color: #212121;
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+        header {
+            background-color: #6F4E37;
+            color: #FFF3E0;
+            text-align: center;
+            padding: 30px;
+        }
+        nav {
+            text-align: center;
+            background: #212121;
+        }
+        nav a {
+            color: #FFF3E0;
+            display: inline-block;
+            padding: 10px 20px;
+            text-decoration: none;
+        }
+        nav a:hover {
+            background: #6F4E37;
+        }
+        .container {
+            max-width: 900px;
+            margin: 20px auto;
+            padding: 0 15px;
+        }
+        h2 {
+            color: #6F4E37;
+            text-align: center;
+            margin-bottom: 20px;
+        }
+        .cards {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+            justify-content: center;
+        }
+        .card {
+            width: 220px;
+            border-radius: 18px;
+            background: white;
+            padding: 15px;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+            text-align: center;
+        }
+        .card img {
+            width: 100%;
+            height: 140px;
+            object-fit: cover;
+            border-radius: 12px;
+            margin-bottom: 10px;
+        }
+        .price {
+            background: #6F4E37;
+            color: #FFF3E0;
+            padding: 6px 12px;
+            border-radius: 10px;
+            font-weight: bold;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            background: white;
+        }
+        th, td {
+            border: 1px solid #ddd;
+            padding: 12px;
+            text-align: left;
+        }
+        th {
+            background-color: #6F4E37;
+            color: #FFF3E0;
+        }
+        tr:nth-child(even) {
+            background-color: #FFF3E0;
+        }
+        footer {
+            text-align: center;
+            padding: 20px;
+            background: #212121;
+            color: #FFF3E0;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>☕ Morning Coffee</h1>
+        <p>Начни утро правильно</p>
+    </header>
+
+    <nav>
+        <a href="#about">О нас</a>
+        <a href="#drinks">Напитки</a>
+        <a href="#prices">Цены</a>
+        <a href="#contacts">Контакты</a>
+    </nav>
+
+    <div class="container">
+        <section id="about">
+            <h2>О нас</h2>
+            <p style="text-align:center;">
+                «Morning Coffee» — уютная кофейня в центре города. 
+                Мы обжариваем зёрна сами и знаем каждого гостя по имени.
+            </p>
+        </section>
+
+        <section id="drinks">
+            <h2>Наши напитки</h2>
+            <div class="cards">
+                <div class="card">
+                    <img src=assets/coffee-espresso.jpg alt="Эспрессо">
+                    <h3>Эспрессо</h3>
+                    <p>Классический крепкий кофе — 30 мл.</p>
+                    <div class="price">150 ₽</div>
+                </div>
+
+                <div class="card">
+                    <img src=assets/i.webp alt="Капучино">
+                    <h3>Капучино</h3>
+                    <p>Эспрессо с молочной пенкой.</p>
+                    <div class="price">220 ₽</div>
+                </div>
+
+                <div class="card">
+                    <img src=assets/hv5ysf1brnhd828260zv7kqy0qf1tdz9.png alt="Латте">
+                    <h3>Латте</h3>
+                    <p>Нежный молочный кофе.</p>
+                    <div class="price">250 ₽</div>
+                </div>
+
+                <div class="card">
+                    <img src=assets/698ed03ea9690_w900.jpg alt="Флэт уайт">
+                    <h3>Флэт уайт</h3>
+                    <p>Двойной эспрессо с тонкой пеной.</p>
+                    <div class="price">260 ₽</div>
+                </div>
+
+                <div class="card">
+                    <img src=assets/zagotovka-karamel-1-min.jpg alt="Раф">
+                    <h3>Раф с солёной карамелью</h3>
+                    <p>Кремовый кофе с сиропом.</p>
+                    <div class="price">290 ₽</div>
+                </div>
+
+                <div class="card">
+                    <img src="https://images.unsplash.com/photo-1518946222227-364f22132616?w=400&q=80" alt="Какао">
+                    <h3>Какао</h3>
+                    <p>Горячий шоколад с маршмеллоу.</p>
+                    <div class="price">230 ₽</div>
+                </div>
+
+                <div class="card">
+                    <img src="https://images.unsplash.com/photo-1461023058943-07fcbe16d735?w=400&q=80" alt="Айс-латте">
+                    <h3>Айс‑латте</h3>
+                    <p>Охлаждённый латте со льдом.</p>
+                    <div class="price">240 ₽</div>
+                </div>
+
+                <div class="card">
+                    <img src=assets/3040296_91938-710x550.jpg alt="Облепиховый чай">
+                    <h3>Облепиховый чай</h3>
+                    <p>Чай с облепихой и специями.</p>
+                    <div class="price">200 ₽</div>
+                </div>
+            </div>
+        </section>
+
+        <section id="prices">
+            <h2>Таблица цен</h2>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Напиток</th>
+                        <th>Объём</th>
+                        <th>Цена</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr><td>Эспрессо</td><td>30 мл</td><td>150 ₽</td></tr>
+                    <tr><td>Капучино</td><td>200 мл</td><td>220 ₽</td></tr>
+                    <tr><td>Латте</td><td>300 мл</td><td>250 ₽</td></tr>
+                    <tr><td>Флэт уайт</td><td>200 мл</td><td>260 ₽</td></tr>
+                    <tr><td>Раф с солёной карамелью</td><td>300 мл</td><td>290 ₽</td></tr>
+                    <tr><td>Какао</td><td>250 мл</td><td>230 ₽</td></tr>
+                    <tr><td>Айс‑латте</td><td>350 мл</td><td>240 ₽</td></tr>
+                    <tr><td>Облепиховый чай</td><td>400 мл</td><td>200 ₽</td></tr>
+                </tbody>
+            </table>
+        </section>
+      
+      <section id="sale">
+    <h2>🔥 Акции 11.11</h2>
+    <table>
+        <thead>
+            <tr>
+                <th>Напиток</th>
+                <th>Обычная цена</th>
+                <th>Цена 11.11</th>
+                <th>Скидка</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr><td>Эспрессо</td><td>150 ₽</td><td>99 ₽</td><td>−34%</td></tr>
+            <tr><td>Капучино</td><td>220 ₽</td><td>155 ₽</td><td>−30%</td></tr>
+            <tr><td>Латте</td><td>250 ₽</td><td>175 ₽</td><td>−30%</td></tr>
+            <tr><td>Флэт уайт</td><td>260 ₽</td><td>180 ₽</td><td>−31%</td></tr>
+            <tr><td>Раф с солёной карамелью</td><td>290 ₽</td><td>199 ₽</td><td>−31%</td></tr>
+            <tr><td>Какао</td><td>230 ₽</td><td>160 ₽</td><td>−30%</td></tr>
+            <tr><td>Айс‑латте</td><td>240 ₽</td><td>170 ₽</td><td>−29%</td></tr>
+            <tr><td>Облепиховый чай</td><td>200 ₽</td><td>140 ₽</td><td>−30%</td></tr>
+        </tbody>
+    </table>
+    <p style="text-align:center; margin-top:10px;">
+        <strong>Только 11 ноября!</strong> Скидки действуют с 8:00 до 21:00. 
+        При заказе двух напитков — третий кекс в подарок 🎁
+    </p>
+</section>
+
+        <section id="contacts">
+            <h2>Контакты</h2>
+            <p style="text-align:center;">📍 ул. Кофейная, 12</p>
+            <p style="text-align:center;">🕒 Ежедневно с 8:00 до 21:00</p>
+            <p style="text-align:center;">📞 <a href>8 (800) 123‑45‑67</a></p>
+        </section>
+    </div>
+
+    <footer>
+        <p>© 2026 Morning Coffee — кофейня, где начинается утро</p>
+    </footer>
+
+</body>
+</html>
